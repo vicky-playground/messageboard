@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+.main--title {
+	margin-left: 10px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.main--form {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.form__messageLabel,
+.form__picLabel,
+.form__messageText,
+.form__picFile {
+	margin-bottom: 10px;
+}
+.firstLine {
+	display: flex;
+	justify-content: center;
+}
+
+hr {
+	width: 98%;
+}
+
+#message__outer,
+#messageDB__outer {
+	margin-left: 10px;
+	font-size: 14px;
+}
+#message__imgBox,
+#messageDB__imgBox {
+	width: 200px;
+	height: 120px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}

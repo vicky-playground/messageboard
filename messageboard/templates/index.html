@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static', filename='/style.css')}}"
+		/>
+	</head>
+	<body>
+		<div class="main--title">發表一篇圖文</div>
+		<div class="main--form">
+			<form class="form__content" action="">
+				<label class="form__messageLabel" for="">文字內容</label>
+				<input
+					class="form__messageText"
+					type="text"
+					placeholder="請輸入文字"
+					required
+				/><br />
+				<label class="form__picLabel" for="">圖片檔案</label>
+				<input class="form__picFile" type="file" name="myfile" id="" required /><br />
+				<button type="submit">送出</button>
+			</form>
+		</div>
+		<div class="firstLine">
+			<hr />
+		</div>
+		<img class="myPic"></img>
+		<script src="{{url_for('static', filename='/message.js')}}"></script>
+	</body>
+</html>
