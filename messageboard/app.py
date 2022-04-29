@@ -109,7 +109,7 @@ def upload_file():
     try:
         s3.upload_fileobj(client_file, s3_bucket, file_name,
                           ExtraArgs={"ContentType": "image/jpeg"})
-        img_url = "https://my-message-board.s3.amazonaws.com/%s" % (file_name)
+        img_url = "https://d3azm2sig5lpkh.cloudfront.net/%s" % (file_name)
 
     except:
         return "error"
