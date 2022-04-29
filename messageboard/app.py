@@ -8,7 +8,7 @@ from database import pool
 app = Flask(__name__, static_folder="static", static_url_path="/")
 app.config["JSON_AS_ASCII"] = False
 app.config["TEMPLATES_AUTO_RELOAD"] = True
-db = yaml.safe_load(open('secret.yaml'))
+db = yaml.safe_load(open('./messageboard/secret.yaml'))
 s3_bucket = db["s3_bucket_name"]
 s3_key = db["access-key-id"]
 s3_secret = db["s3_secret"]
