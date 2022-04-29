@@ -1,5 +1,5 @@
-from flask import *
 import mysql.connector.pooling
+import mysql.connector
 import yaml
 
 dbRDS = yaml.safe_load(open('./messageboard/secret.yaml'))

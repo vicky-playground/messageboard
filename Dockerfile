@@ -1,6 +1,6 @@
 FROM python
 
-WORKDIR /main
+WORKDIR /mainfile
 
 COPY requirement.txt .
 
